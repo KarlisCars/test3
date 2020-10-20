@@ -9,11 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Button(action: {
-            // Here will be action for button
-        }, label: {
-            Text("Swift button")
-        })
+        
+        VStack{
+            
+            HStack(alignment: .top, spacing: 20, content: {
+                Button(action: {
+                // Here will be action for button
+            }, label: {
+                Text("Swift button")
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color.yellow)
+                    .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.pink/*@END_MENU_TOKEN@*/)
+            })
+                /*@START_MENU_TOKEN@*/Text("Placeholder")/*@END_MENU_TOKEN@*/
+            Spacer()
+            })
+            Spacer()
+        }
+        
+        
             
     }
 }
